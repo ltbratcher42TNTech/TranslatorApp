@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from deep_translator import GoogleTranslator
+import pyperclip
 
 # Defining the languages
 LANGUAGES = ['Korean', 'German', 'Spanish']
@@ -14,7 +15,7 @@ LANGUAGE_MAPPING = {
 
 # Defining the translate function
 def translate_text():
-    input_text = text_input.get("1.0", tk.END).strip()
+    input_text = text_input.get("1.0", tk.END)
     selected_language = language_var.get()
     target_lang_code = LANGUAGE_MAPPING.get(selected_language)
 
@@ -30,6 +31,11 @@ def translate_text():
             result_box.delete("1.0", tk.END)
             result_box.insert(tk.END, f"Error: {e}")
             result_box.config(state='disabled')
+
+def copy_to_clipboard():
+    translated_text =  result_box.get("1.0", tk.END)
+    if translated_text:
+        pyperclip.copy(translated_text)
 
 # Initialize the main window
 root = tk.Tk()
@@ -52,6 +58,11 @@ language_dropdown.pack()
 # Translate button
 translate_btn = tk.Button(root, text="Translate", command=translate_text)
 translate_btn.pack(pady=10)
+
+# Copy tp clipboard button
+copy_btn = tk.Button(root, text="Copy Translated Text", command=copy_to_clipboard)
+copy_btn.pack(pady=5)
+
 
 # Translated text output
 tk.Label(root, text="Translated text:").pack(pady=5)
