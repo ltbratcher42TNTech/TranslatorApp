@@ -4,13 +4,16 @@ from deep_translator import GoogleTranslator
 import pyperclip
 
 # Defining the languages
-LANGUAGES = ['Korean', 'German', 'Spanish']
+LANGUAGES = ['Korean', 'German', 'Spanish', 'French', 'Chinese (Simplified)', 'Chinese (Traditional)']
 
 # Mapping languages
 LANGUAGE_MAPPING = {
     'Korean': 'ko',
     'German': 'de',
-    'Spanish': 'es'
+    'Spanish': 'es',
+    'French': 'fr',
+    'Chinese (Simplified)': 'zh-CN',
+    'Chinese (Traditional)': 'zh-TW'
 }
 
 # Defining the translate function
