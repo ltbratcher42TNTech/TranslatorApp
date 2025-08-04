@@ -8,7 +8,7 @@ Supports Korean, German, and Spanish using the `deep-translator` library.
 
 ## Features
 
-- Translate any text to **Korean**, **German**, or **Spanish**, with plans to implement more in the near future
+- Translate any text to **Korean**, **German**, **Spanish**, **French**, **Chinese (Simplified)**, or **Chinese (Traditional)** with plans to implement more in the near future
 - Copy translated text to your clipboard
 - Lightweight, responsive GUI using Tkinter
 - Instant translation using the free `deep-translator` library
