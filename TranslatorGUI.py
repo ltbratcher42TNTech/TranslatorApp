@@ -58,6 +58,13 @@ def copy_to_clipboard():
     if translated_text:
         pyperclip.copy(translated_text)
 
+
+def clear_text():
+    text_input.delete("1.0", tk.END)
+    result_box.config(state='normal')
+    result_box.delete("1.0", tk.END)
+    result_box.config(state='disabled')
+
 # Initialize the main window
 root = tk.Tk()
 root.title("TJ's Translator App")
@@ -84,6 +91,9 @@ translate_btn.pack(pady=10)
 copy_btn = tk.Button(root, text="Copy Translated Text", command=copy_to_clipboard)
 copy_btn.pack(pady=5)
 
+# Clear fields button
+clear_btn = tk.Button(root, text="Clear", command=clear_text)
+clear_btn.pack(pady=5)
 
 # Translated text output
 tk.Label(root, text="Translated text:").pack(pady=5)
