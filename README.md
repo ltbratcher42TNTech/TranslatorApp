@@ -2,13 +2,13 @@
 
 A simple, beginner-friendly desktop translation app built with Python and Tkinter.
 
-Supports Korean, German, and Spanish using the `deep-translator` library.
+Supports 20 different languages using the `deep-translator` library.
 
 ---
 
 ## Features
 
-- Translate any text to **Korean**, **German**, **Spanish**, **French**, **Chinese (Simplified)**, or **Chinese (Traditional)** with plans to implement more in the near future
+- Translate any text to **20 different language**, including, but not limited to **Korean**, **German**, **Spanish**, **French**, **Chinese (Simplified)**, and **Chinese (Traditional)**
 - Copy translated text to your clipboard
 - Lightweight, responsive GUI using Tkinter
 - Instant translation using the free `deep-translator` library
