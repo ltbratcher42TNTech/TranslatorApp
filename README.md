@@ -13,7 +13,7 @@ Supports 20 different languages using the `deep-translator` library.
 - Lightweight, responsive GUI using Tkinter
 - Instant translation using the free `deep-translator` library
 
-![Translator App Screenshot](images/TranslatorScreenShot.png)
+![Translator App Screenshot](images/TranslatorScreenshot.png)
 
 
 ---
